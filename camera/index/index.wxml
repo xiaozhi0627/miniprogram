@@ -1,0 +1,8 @@
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;">
+        <cover-view class="item" bindtap="takePhoto">{{toScean}}</cover-view>
+    </camera>
+    <image wx:if="{{imageSrc}}" mode="widthFix" src="{{imageSrc}}"></image>
+  </view>
+</view>
